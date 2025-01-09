@@ -10,7 +10,7 @@ jobs:
 #      - run: echo "the name of the branch is: ${{ github.ref }}"
       - name: Checkout repository code
         uses: actions/checkout@v4
-      - run: echo "repository: ${{github.repository}} cloned"
+#      - run: echo "repository: ${{github.repository}} cloned"
       - run: echo "workspace is: ${{github.workspace}}   
 
       - run: echo "workflow ready to test your code on the runned"
