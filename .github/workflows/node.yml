@@ -1,0 +1,20 @@
+name: Github action Demo
+run-name: ${{ github.actor }} testing out Github Action!
+on: [push]
+jobs:
+  explore-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "first job"
+      - run: echo "this job runs on os: ${{ runner.os }}"
+      - run: echo "the name of the branch is: ${{ github.ref }}"
+      - name: Checkout repository code
+        uses: actions/checkout@v4
+      - run: echo "repository: ${{github.repository}} cloned"
+      - run: echo "workspace is: ${{github.workspace}}   
+
+      - run: echo "workflow ready to test your code on the runned"
+      - name: List files in the repo
+        run: |
+          ls $${{github.workspace}}
+      - run: echo "job status is: ${{job.status}}"
