@@ -11,10 +11,10 @@ jobs:
       - name: Checkout repository code
         uses: actions/checkout@v4
 #      - run: echo "repository: ${{github.repository}} cloned"
-      - run: echo "workspace is: ${{github.workspace}}   
+#      - run: echo "workspace is: ${{github.workspace}}   
 
       - run: echo "workflow ready to test your code on the runned"
-      - name: List files in the repo
-        run: |
-          ls $${{github.workspace}}
-      - run: echo "job status is: ${{job.status}}"
+        # - name: List files in the repo
+        #       run: |
+        # ls $${{github.workspace}}
+        #      - run: echo "job status is: ${{job.status}}"
