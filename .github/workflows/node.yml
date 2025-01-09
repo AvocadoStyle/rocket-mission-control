@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "first job"
-      - run: echo "this job runs on os: ${{ runner.os }}"
+#      - run: echo "this job runs on os: ${{ runner.os }}"
       - run: echo "the name of the branch is: ${{ github.ref }}"
       - name: Checkout repository code
         uses: actions/checkout@v4
