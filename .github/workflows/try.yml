@@ -32,7 +32,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: steps begin
-        uses: actions/step-node@v4
+        uses: actions/setup-node@v4
       - run: echo "Deploying simulation..."
       - run: echo "Deployed simulation successfully!"
        
