@@ -1,5 +1,5 @@
 name: Github action Demo
-run-name: ${{ github.actor }} testing out Github Action!
+run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }} to Github Actions!!!
 on: [push]
 jobs:
   explore-github-actions:
