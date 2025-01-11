@@ -1,6 +1,10 @@
 name: Github action Demo
 run-name: Deploy to ${{ inputs.deploy_target }} by @${{ github.actor }} to Github Actions!!!
-on: [push]
+on:
+  push:
+    branches:
+      - 'main'
+
 jobs:
   explore-github-actions:
     runs-on: ubuntu-latest
