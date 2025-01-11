@@ -6,6 +6,7 @@ on:
       - 'main'
       - 'check'
       - 'another_check'
+      - 'another_check_v3'
 
 jobs:
   explore-github-actions:
