@@ -6,6 +6,9 @@ on:
       - 'main'
       - 'check'
       - 'another_check'
+  pull_request: 
+    branches:
+      - 'main'
 
 jobs:
   explore-github-actions:
