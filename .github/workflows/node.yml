@@ -5,6 +5,7 @@ on:
     branches:
       - 'main'
       - 'check'
+      - 'another_check'
 
 jobs:
   explore-github-actions:
