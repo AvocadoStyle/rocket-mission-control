@@ -27,3 +27,12 @@ jobs:
       - run: npm install
       - run: npm run build --prefix client
       # - run: npm test 
+  deploy:  
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: steps begin
+        uses: actions/step-node@v4
+      - run: echo "Deploying simulation..."
+      - run: echo "Deployed simulation successfully!"
+       
