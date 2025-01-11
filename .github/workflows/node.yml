@@ -8,6 +8,11 @@ on:
       - 'another_check'
       - 'another_check_v3'
 
+  pull_request: 
+    branches:
+      - 'main'
+
+
 jobs:
   explore-github-actions:
     runs-on: ubuntu-latest
